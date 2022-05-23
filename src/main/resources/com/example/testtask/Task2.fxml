@@ -40,12 +40,12 @@
       </Label>
       <Label text="Температура:" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
       <Label GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <Text fx:id="temp" strokeType="OUTSIDE" strokeWidth="0.0" text="Температура" wrappingWidth="164.13671875" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Text fx:id="temp" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="164.13671875" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <Button fx:id="button" mnemonicParsing="false" onAction="#OnCityAction" text="Загрузить" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
          <GridPane.margin>
             <Insets top="20.0" />
          </GridPane.margin>
       </Button>
-      <Text fx:id="infoTemp" strokeType="OUTSIDE" strokeWidth="0.0" text="Описание погоды" wrappingWidth="205.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+      <Text fx:id="infoTemp" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="205.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP" />
    </children>
 </GridPane>
