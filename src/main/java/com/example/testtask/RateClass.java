@@ -17,29 +17,15 @@ public class RateClass {
    private static Map<String, String> map = new HashMap<>();
    private static String date = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
 
-   public static String getJsonString() {
-      return jsonString;
-   }
-
-   public static void setJsonString(String jsonString) {
-      RateClass.jsonString = jsonString;
-   }
-
    public static Map<String, String> getMap() {
       return map;
-   }
-
-   public static void setMap(Map<String, String> map) {
-      RateClass.map = map;
    }
 
    public static String getDate() {
       return date;
    }
 
-   public static void setDate(String date) {
-      RateClass.date = date;
-   }
+
 
    public static void RateParser() throws IOException {
       URL url = new URL(jsonString);
@@ -76,7 +62,6 @@ public class RateClass {
    }
 
    public static String getCurrentCurrency(String key) {
-      //update db
       map = RateExchange.DbConnectionSelectValues();
       if (map == null) {
          System.out.println("База пустая, нет курса по текущей дате");

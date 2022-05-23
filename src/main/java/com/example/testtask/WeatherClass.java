@@ -20,28 +20,14 @@ public class WeatherClass {
 
     private static String information;
 
-    public static String getCity() {
-        return city;
-    }
-
-    public static void setCity(String city) {
-        WeatherClass.city = city;
-    }
 
     public static String getTemperature() {
         return temperature;
     }
 
-    public static void setTemperature(String temperature) {
-        WeatherClass.temperature = temperature;
-    }
 
     public static String getInformation() {
         return information;
-    }
-
-    public static void setInformation(String information) {
-        WeatherClass.information = information;
     }
 
     public static String getCitiesByInput(String query) throws IOException {
