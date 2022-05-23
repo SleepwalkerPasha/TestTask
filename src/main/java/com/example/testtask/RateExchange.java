@@ -18,7 +18,6 @@ public class RateExchange {
         try{
             Class.forName(DB_Driver);
             connection = DriverManager.getConnection(DB_URL, USER, PASS);
-            System.out.println("Выполнено");
 
             stmt = connection.createStatement();
             String sql = "CREATE TABLE IF NOT EXISTS RATE_EXCHANGE (" +
@@ -28,7 +27,7 @@ public class RateExchange {
                     "submisson_date DATE" +
                     ")";
             stmt.executeUpdate(sql);
-            System.out.println("Created table in given database...");
+
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             System.out.println("JDBC драйвер для СУБД не найден");
@@ -58,7 +57,6 @@ public class RateExchange {
             try{
                 Class.forName(DB_Driver);
                 connection = DriverManager.getConnection(DB_URL, USER, PASS);
-                System.out.println("Выполнено");
 
                 stmt = connection.createStatement();
 
@@ -95,14 +93,12 @@ public class RateExchange {
             try{
                 Class.forName(DB_Driver);
                 connection = DriverManager.getConnection(DB_URL, USER, PASS);
-                System.out.println("Выполнено");
 
                 stmt = connection.createStatement();
 
                 String sql = "INSERT INTO RATE_EXCHANGE VALUES(" + id + ", '" + title + "', '" + currency +
                         "', '" + date + "');";
                 stmt.executeUpdate(sql);
-                System.out.println("inserted");
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
                 System.out.println("JDBC драйвер для СУБД не найден");
