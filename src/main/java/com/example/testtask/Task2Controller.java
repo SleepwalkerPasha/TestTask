@@ -35,8 +35,8 @@ public class Task2Controller {
                 temp.setText(WeatherClass.getTemperature());
                 infoTemp.setText(WeatherClass.getInformation());
             }else {
-                temp.setText("Ссылка на прогноз погоды не найдена");
-                infoTemp.setText("Неверно указан город");
+                    temp.setText("Ссылка на прогноз погоды не найдена");
+                    infoTemp.setText("Неверно указан город");
             }
         }catch (IOException e){
             e.printStackTrace();

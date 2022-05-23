@@ -48,19 +48,19 @@ public class WeatherClass {
         city = query;
         Document doc;
         Element link;
-        String urlCity;
+        String urlCity = null;
         String url = "https://pogoda.mail.ru/search/?name=" + query;
         doc = Jsoup.connect(url).get();
-
-        urlCity = url;
-        if(urlCity.isEmpty()){
+        urlCity = doc.location();
+        if (urlCity.isEmpty()) {
             Elements names = doc.select("a[href]");
-            for (Element e: names) {
-                if (city.length() >= 5 && e.text().contains(city)){
+            for (Element e : names) {
+                if (city.length() >= 3 && e.text().equals(city)) {
                     urlCity = e.attr("href");
                 }
             }
-            urlCity = "https://pogoda.mail.ru" + urlCity;
+            if (!urlCity.isEmpty())
+                urlCity = "https://pogoda.mail.ru" + urlCity;
         }
         return urlCity;
     }
@@ -71,26 +71,30 @@ public class WeatherClass {
         Document page = null;
         try {
             page = Jsoup.parse(new URL(url), 3000);
-        }catch (MalformedURLException e){
+        } catch (MalformedURLException e) {
             e.printStackTrace();
             message = "URL не найден, неверно указан город";
             System.out.println(message);
         }
-        if(page != null){
+        if (page != null) {
             ArrayList<String> infoTemperatureArray = new ArrayList<>();
             Elements temp = page.getElementsByClass("information__content__temperature");
             Elements firstInfo = page.getElementsByClass("information__content__additional information__content__additional_first");
             Elements secondInfo = page.getElementsByClass("information__content__additional information__content__additional_second");
             Elements infoAboutTemp = secondInfo.select("span");
-            for (Element e: infoAboutTemp) {
-                if (!e.attr("title").isEmpty())
-                    infoTemperatureArray.add(e.attr("title"));
+            if (temp.text().isEmpty() || firstInfo.text().isEmpty() || infoTemperatureArray.toString().isEmpty()) {
+                message = "Пустые значения";
             }
-            System.out.println(firstInfo.text());
-            System.out.println(infoTemperatureArray);
-            temperature = temp.text();
-            information = firstInfo.text()  +", "+ infoTemperatureArray.toString().substring(1,infoTemperatureArray.toString().length()-1);
-
+            if (!infoAboutTemp.isEmpty()) {
+                for (Element e : infoAboutTemp) {
+                    if (!e.attr("title").isEmpty())
+                        infoTemperatureArray.add(e.attr("title"));
+                }
+            }
+            if (!temp.text().isEmpty() && !firstInfo.text().isEmpty() && !infoTemperatureArray.toString().isEmpty()) {
+                temperature = temp.text();
+                information = firstInfo.text() + ", " + infoTemperatureArray.toString().substring(1, infoTemperatureArray.toString().length() - 1);
+            }
         }
         return message;
     }
