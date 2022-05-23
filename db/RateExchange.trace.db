@@ -1,0 +1,392 @@
+2022-05-22 11:30:41 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1573)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-05-22 11:30:50 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1573)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-05-22 14:32:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "CREATE TABLE RATEEXCHANGE (id INTEGER not NULL, Currency VARCHAR(255), [*]Value DOUBLE) "; ожидалось "identifier"
+Syntax error in SQL statement "CREATE TABLE RATEEXCHANGE (id INTEGER not NULL, Currency VARCHAR(255), [*]Value DOUBLE) "; expected "identifier"; SQL statement:
+CREATE TABLE RATEEXCHANGE (id INTEGER not NULL, Currency VARCHAR(255), Value DOUBLE)  [42001-212]
+2022-05-22 14:33:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "CREATE TABLE RATEEXCHANGE (identifier INTEGER not NULL, Currency VARCHAR(255), [*]Value DOUBLE) "; ожидалось "identifier"
+Syntax error in SQL statement "CREATE TABLE RATEEXCHANGE (identifier INTEGER not NULL, Currency VARCHAR(255), [*]Value DOUBLE) "; expected "identifier"; SQL statement:
+CREATE TABLE RATEEXCHANGE (identifier INTEGER not NULL, Currency VARCHAR(255), Value DOUBLE)  [42001-212]
+2022-05-22 14:35:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "CREATE TABLE RATEEXCHANGE (id INT NOT NULL, Currency VARCHAR(255) NOT NULL, [*]Value DOUBLE NOT NULL) "; ожидалось "identifier"
+Syntax error in SQL statement "CREATE TABLE RATEEXCHANGE (id INT NOT NULL, Currency VARCHAR(255) NOT NULL, [*]Value DOUBLE NOT NULL) "; expected "identifier"; SQL statement:
+CREATE TABLE RATEEXCHANGE (id INT NOT NULL, Currency VARCHAR(255) NOT NULL, Value DOUBLE NOT NULL)  [42001-212]
+2022-05-22 14:37:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "CREATE TABLE RateExchange (id INT NOT NULL, Currency VARCHAR(255) NOT NULL, [*]Value DOUBLE NOT NULL) "; ожидалось "identifier"
+Syntax error in SQL statement "CREATE TABLE RateExchange (id INT NOT NULL, Currency VARCHAR(255) NOT NULL, [*]Value DOUBLE NOT NULL) "; expected "identifier"; SQL statement:
+CREATE TABLE RateExchange (id INT NOT NULL, Currency VARCHAR(255) NOT NULL, Value DOUBLE NOT NULL)  [42001-212]
+2022-05-22 14:41:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "CREATE TABLE IF NOT EXISTS [*]'RateExchange' ('id' INTEGER PRIMARY KEY AUTO_INCREMENT, 'Currency' VARCHAR(255) NOT NULL, 'Value'    DOUBLE NOT NULL) "; ожидалось "identifier"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS [*]'RateExchange' ('id' INTEGER PRIMARY KEY AUTO_INCREMENT, 'Currency' VARCHAR(255) NOT NULL, 'Value'    DOUBLE NOT NULL) "; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS 'RateExchange' ('id' INTEGER PRIMARY KEY AUTO_INCREMENT, 'Currency' VARCHAR(255) NOT NULL, 'Value'    DOUBLE NOT NULL)  [42001-212]
+2022-05-22 14:42:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "CREATE TABLE IF NOT EXISTS [*]'RateExchange' ('id' INTEGER PRIMARY KEY AUTO_INCREMENT, 'Currency' VARCHAR(255) NOT NULL, 'Value'    DOUBLE NOT NULL, ) "; ожидалось "identifier"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS [*]'RateExchange' ('id' INTEGER PRIMARY KEY AUTO_INCREMENT, 'Currency' VARCHAR(255) NOT NULL, 'Value'    DOUBLE NOT NULL, ) "; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS 'RateExchange' ('id' INTEGER PRIMARY KEY AUTO_INCREMENT, 'Currency' VARCHAR(255) NOT NULL, 'Value'    DOUBLE NOT NULL, )  [42001-212]
+2022-05-22 14:42:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "CREATE TABLE IF NOT EXISTS [*]'RateExchange' ('id' INTEGER PRIMARY KEY AUTO_INCREMENT, 'Currency' VARCHAR(255) NOT NULL, 'Value'    DOUBLE NOT NULL) "; ожидалось "identifier"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS [*]'RateExchange' ('id' INTEGER PRIMARY KEY AUTO_INCREMENT, 'Currency' VARCHAR(255) NOT NULL, 'Value'    DOUBLE NOT NULL) "; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS 'RateExchange' ('id' INTEGER PRIMARY KEY AUTO_INCREMENT, 'Currency' VARCHAR(255) NOT NULL, 'Value'    DOUBLE NOT NULL)  [42001-212]
+2022-05-22 14:43:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "CREATE TABLE IF NOT EXISTS [*]'RateExchange' ('id' INTEGER PRIMARY KEY AUTO_INCREMENT, 'Currency' VARCHAR(255) NOT NULL, 'Value'    DOUBLE NOT NULL) "; ожидалось "identifier"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS [*]'RateExchange' ('id' INTEGER PRIMARY KEY AUTO_INCREMENT, 'Currency' VARCHAR(255) NOT NULL, 'Value'    DOUBLE NOT NULL) "; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS 'RateExchange' ('id' INTEGER PRIMARY KEY AUTO_INCREMENT, 'Currency' VARCHAR(255) NOT NULL, 'Value'    DOUBLE NOT NULL)  [42001-212]
+2022-05-22 14:43:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "CREATE TABLE IF NOT EXISTS [*]'RateExchange' ('id' INTEGER PRIMARY KEY AUTO_INCREMENT, 'Currency' VARCHAR(255) NOT NULL, 'Value'    DOUBLE NOT NULL) "; ожидалось "identifier"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS [*]'RateExchange' ('id' INTEGER PRIMARY KEY AUTO_INCREMENT, 'Currency' VARCHAR(255) NOT NULL, 'Value'    DOUBLE NOT NULL) "; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS 'RateExchange' ('id' INTEGER PRIMARY KEY AUTO_INCREMENT, 'Currency' VARCHAR(255) NOT NULL, 'Value'    DOUBLE NOT NULL)  [42001-212]
+2022-05-22 15:12:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "CREATE TABLE IF NOT EXISTS RATE_EXCHANGE( [*](id INT NOT NULL, title VARCHAR(50) NOT NULL, currency VARCHAR(20) NOT NULL, submisson_date DATE) "; ожидалось "identifier"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS RATE_EXCHANGE( [*](id INT NOT NULL, title VARCHAR(50) NOT NULL, currency VARCHAR(20) NOT NULL, submisson_date DATE) "; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS RATE_EXCHANGE( (id INT NOT NULL, title VARCHAR(50) NOT NULL, currency VARCHAR(20) NOT NULL, submisson_date DATE)  [42001-212]
+2022-05-22 15:13:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "CREATE TABLE IF NOT EXISTS RATE_EXCHANGE( [*](id INT NOT NULL, title VARCHAR(50) NOT NULL, currency VARCHAR(20) NOT NULL, submisson_date DATE); "; ожидалось "identifier"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS RATE_EXCHANGE( [*](id INT NOT NULL, title VARCHAR(50) NOT NULL, currency VARCHAR(20) NOT NULL, submisson_date DATE); "; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS RATE_EXCHANGE( (id INT NOT NULL, title VARCHAR(50) NOT NULL, currency VARCHAR(20) NOT NULL, submisson_date DATE);  [42001-212]
+2022-05-22 16:27:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "SUBMISSION_DATE" не найден
+Column "SUBMISSION_DATE" not found; SQL statement:
+SELECT ID, CURRENCY, SUBMISSION_DATE FROM RATE_EXCHANGE [42122-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:574)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:186)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:143)
+	at com.example.testtask/com.example.testtask.RateExchange.DbConnectionSelectValues(RateExchange.java:102)
+	at com.example.testtask/com.example.testtask.MainApplication.main(MainApplication.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:465)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:364)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1071)
+2022-05-22 16:28:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Метод не разрешен для запросов. Используйте execute или executeQuery вместо executeUpdate
+Method is not allowed for a query. Use execute or executeQuery instead of executeUpdate; SQL statement:
+SELECT * FROM RATE_EXCHANGE [90001-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.command.Prepared.update(Prepared.java:223)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:174)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:190)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:143)
+	at com.example.testtask/com.example.testtask.RateExchange.DbConnectionSelectValues(RateExchange.java:101)
+	at com.example.testtask/com.example.testtask.MainApplication.main(MainApplication.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:465)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:364)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1071)
+2022-05-22 16:35:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "SUBMISSION_DATE" не найден
+Column "SUBMISSION_DATE" not found; SQL statement:
+SELECT TITLE, CURRENCY, SUBMISSION_DATE FROM RATE_EXCHANGE ORDER BY ID [42122-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:574)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:92)
+	at com.example.testtask/com.example.testtask.RateExchange.DbConnectionSelectValues(RateExchange.java:104)
+	at com.example.testtask/com.example.testtask.MainApplication.main(MainApplication.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:465)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:364)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1071)
+2022-05-22 16:37:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "SUBMISSION_DATE" не найден
+Column "SUBMISSION_DATE" not found; SQL statement:
+SELECT TITLE, CURRENCY, SUBMISSION_DATE FROM RATE_EXCHANGE ORDER BY ID [42122-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:574)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:92)
+	at com.example.testtask/com.example.testtask.RateExchange.DbConnectionSelectValues(RateExchange.java:104)
+	at com.example.testtask/com.example.testtask.MainApplication.main(MainApplication.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:465)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:364)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1071)
+2022-05-22 16:38:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "SUBMISSION_DATE" не найден
+Column "SUBMISSION_DATE" not found; SQL statement:
+SELECT TITLE, CURRENCY, SUBMISSION_DATE FROM RATE_EXCHANGE ORDER BY ID [42122-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:574)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:92)
+	at com.example.testtask/com.example.testtask.RateExchange.DbConnectionSelectValues(RateExchange.java:104)
+	at com.example.testtask/com.example.testtask.MainApplication.main(MainApplication.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:465)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:364)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1071)
+2022-05-22 16:40:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "SUBMISSION_DATE" не найден
+Column "SUBMISSION_DATE" not found; SQL statement:
+SELECT TITLE, CURRENCY, SUBMISSION_DATE FROM RATE_EXCHANGE ORDER BY ID [42122-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:574)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:92)
+	at com.example.testtask/com.example.testtask.RateExchange.DbConnectionSelectValues(RateExchange.java:104)
+	at com.example.testtask/com.example.testtask.MainApplication.main(MainApplication.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:465)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:364)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1071)
+2022-05-22 17:01:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "SUBMISSION_DATE" не найден
+Column "SUBMISSION_DATE" not found; SQL statement:
+SELECT TITLE, CURRENCY, SUBMISSION_DATE FROM RATE_EXCHANGE ORDER BY ID [42122-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:574)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:92)
+	at com.example.testtask/com.example.testtask.RateExchange.DbConnectionSelectValues(RateExchange.java:103)
+	at com.example.testtask/com.example.testtask.MainApplication.main(MainApplication.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:465)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:364)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1071)
+2022-05-22 17:02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT TITLE, CURRENCY, SUBMISSION_DATE WHERE [*]* FROM RATE_EXCHANGE ORDER BY ID"; ожидалось "INTERSECTS, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "SELECT TITLE, CURRENCY, SUBMISSION_DATE WHERE [*]* FROM RATE_EXCHANGE ORDER BY ID"; expected "INTERSECTS, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+SELECT TITLE, CURRENCY, SUBMISSION_DATE WHERE * FROM RATE_EXCHANGE ORDER BY ID [42001-212]
+2022-05-22 18:43:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "SUBMISSION_DATE" не найден
+Column "SUBMISSION_DATE" not found [42122-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:301)
+	at com.example.testtask/com.example.testtask.RateExchange.DbConnectionSelectValues(RateExchange.java:104)
+	at com.example.testtask/com.example.testtask.MainApplication.main(MainApplication.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:465)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:364)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1071)
+2022-05-22 18:46:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "SUBMISSION_DATE" не найден
+Column "SUBMISSION_DATE" not found [42122-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:301)
+	at com.example.testtask/com.example.testtask.RateExchange.DbConnectionSelectValues(RateExchange.java:104)
+	at com.example.testtask/com.example.testtask.MainApplication.main(MainApplication.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:465)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:364)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1071)
+2022-05-22 18:46:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "SUBMISSION_DATE" не найден
+Column "SUBMISSION_DATE" not found [42122-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:301)
+	at com.example.testtask/com.example.testtask.RateExchange.DbConnectionSelectValues(RateExchange.java:104)
+	at com.example.testtask/com.example.testtask.MainApplication.main(MainApplication.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:465)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:364)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1071)
+2022-05-22 18:48:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "SUBMISSION_DATE" не найден
+Column "SUBMISSION_DATE" not found [42122-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:301)
+	at com.example.testtask/com.example.testtask.RateExchange.DbConnectionSelectValues(RateExchange.java:104)
+	at com.example.testtask/com.example.testtask.MainApplication.main(MainApplication.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:465)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:364)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1071)

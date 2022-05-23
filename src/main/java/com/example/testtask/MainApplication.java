@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+
 import java.io.IOException;
 
 public class MainApplication extends Application {
@@ -17,7 +18,8 @@ public class MainApplication extends Application {
         stage.show();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        // RateExchange.DbConnectionDeleteRecords();
         launch();
     }
 }

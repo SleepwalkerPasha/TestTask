@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testtask.MainController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testtask.Task1Controller">
     <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="109.0" />
         <ColumnConstraints hgrow="SOMETIMES" maxWidth="505.0" minWidth="10.0" prefWidth="191.0" />
@@ -20,8 +20,8 @@
     <children>
         <Label fx:id="welcomeText" alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="35.0" prefWidth="103.0" text="Курс:" GridPane.rowIndex="1" />
         <Label fx:id="welcomeText1" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="103.0" text="Валюта:" />
-        <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" />
-        <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#OnButtonBackToMenuClick" prefHeight="25.0" prefWidth="91.0" text="Back to menu" GridPane.halignment="LEFT" GridPane.valignment="TOP" />
+        <ChoiceBox fx:id="CurrencyBox" prefWidth="150.0" GridPane.columnIndex="1" />
+        <TextField fx:id="CurrencyField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#OnButtonBackToMenuClick" prefHeight="25.0" prefWidth="91.0" text="В Меню" GridPane.halignment="LEFT" GridPane.valignment="TOP" />
     </children>
 </GridPane>

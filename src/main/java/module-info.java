@@ -10,6 +10,9 @@ module com.example.testtask {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires json.simple;
+    requires java.sql;
+    requires org.jsoup;
 
     opens com.example.testtask to javafx.fxml;
     exports com.example.testtask;
