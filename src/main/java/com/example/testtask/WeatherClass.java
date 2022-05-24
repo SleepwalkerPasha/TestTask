@@ -37,14 +37,14 @@ public class WeatherClass {
         String urlCity = null;
         String url = "https://pogoda.mail.ru/search/?name=" + query;
         doc = Jsoup.connect(url).get();
-        urlCity = doc.location();
+        urlCity = doc.select("link[rel=canonical]").attr("href");
         if (urlCity.isEmpty()) {
-            Elements names = doc.select("a[href]");
-            for (Element e : names) {
-                if (city.length() >= 3 && e.text().equals(city)) {
-                    urlCity = e.attr("href");
+            Element names = doc.selectFirst("a[href]");
+                if (city.length() >= 3 && names.text().equals(city)) {
+                    urlCity = names.attr("href");
+                }else {
+                    urlCity = "";
                 }
-            }
             if (!urlCity.isEmpty())
                 urlCity = "https://pogoda.mail.ru" + urlCity;
         }
